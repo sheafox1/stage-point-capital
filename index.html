@@ -496,7 +496,7 @@ function render(){
   const s=flow()[i]; prog(); backBtn.hidden=i===0;
   let h='<h2 class="q">'+s.q+'</h2>'; if(s.sub) h+='<p class="qsub">'+s.sub+'</p>';
   if(s.key==='contact' && ans.experience==='None yet') h+='<p class="note-in">Stage Point Fund lends to experienced fix and flip investors. Send it over and our team will tell you what fits.</p>';
-  if(s.key==='contact' && ans.amount==='Over $2M') h+='<p class="note-in">Our average loan is about $500,000. Send it over and we will tell you what we can do.</p>';
+  if(s.key==='contact' && ans.amount==='Over $1M') h+='<p class="note-in">Our average loan is about $500,000. Send it over and we will tell you what we can do.</p>';
   if(s.key==='contact' && ans.path!=='I am an agent or wholesaler') h+='<p class="note-in">First-lien loans to investors renovating single and multi-family housing.</p>';
   if(s.options){ h+='<div class="opts'+(s.cols===2?' two':' one')+'">'; s.options.forEach(function(o,n){ h+='<button type="button" class="opt'+(ans[s.key]===clean(o)?' on':'')+'" data-i="'+n+'"><span>'+o+'</span><span class="dot">'+TICK+'</span></button>'; }); h+='</div>'; }
   if(s.fields){ h+='<div class="fields"><div class="row2">'+s.fields.filter(function(f){return f.h;}).map(fld).join('')+'</div>'+s.fields.filter(function(f){return !f.h;}).map(fld).join('')+'</div>'; }
